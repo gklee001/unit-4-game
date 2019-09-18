@@ -8,37 +8,67 @@
     <title>Fighter Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 </head>
 
 <body>
     <div class="container">
         <!--character select div -->
-        <div id='player'>
+        <div id='character'>
             <h1>Pick Your Pokemone</h1>
             <div class="row">
-                <div id="tartortle" class="col-sm-3">tartortle</div>
-                <div id="zapados" class="col-sm-3">Zapados</div>
-                <div id="togapi" class="col-sm-3">Togapi</div>
-                <div id="nickiMinaj" class="col-sm-3">Nicki Minaj</div>
+                <div id="tartortle" class="col-sm-3">
+                    <h3>wartortle</h3>
+                    <img src="./assets/images/wartortle.jpg" alt="wartortle">
+                    <h2 id="warHp"></h2>
+                    <button id="war" class='selected'>select</button>
+                </div>
+                <div id="zapados" class="col-sm-3">
+                    <h3>zapados</h3>
+                    <img src="./assets/images/wartortle.jpg" alt="zapados">
+                    <h2 id="zapHp"></h2>
+                    <button id="zap" class='selected'>select</button>
+                </div>
+                <div id="togapi" class="col-sm-3">
+                    <h3>togapi</h3>
+                    <img src="./assets/images/wartortle.jpg" alt="togapi">
+                    <h2 id="togHp"></h2>
+                    <button id="tog" class='selected'>select</button>
+                </div>
+                <div id="nickiMinaj" class="col-sm-3">
+                    <h3>Nicki Minaj</h3>
+                    <img src="./assets/images/wartortle.jpg" alt="wartortle">
+                    <h2 id="nicHp"></h2>
+                    <button id="nic" class='selected'>select</button>
+                </div>
             </div>
         </div>
         <!-- end character select div -->
-        <!-- defenders div -->
-        <div class='row'>
-            <h1>Defenders</h1>
 
+        <!-- beginning of player div -->
+        <div class="container">
+            <h1>Player</h1>
+            <div id="player" class='row'></div>
+        </div>
+        <!-- end player div -->
+
+        <!-- defenders div -->
+        <div class='container'>
+            <h1>Defenders</h1>
+            <div id="defenders" class='row'></div>
         </div>
         <!-- end of defenders div -->
-        <!-- beginning of defeated div-->
-        <div id="defeated" class='row'>
-            <h1>Defeated</h1>
 
+        <!-- beginning of defeated div-->
+        <div class='container'>
+            <h1>Defeated</h1>
+            <div id="defeated" class='row'></div </div> <!-- end of defeated div -->
         </div>
-        <!-- end of defeated div -->
-    </div>
 
 
 
 </body>
+
 
 </html>
